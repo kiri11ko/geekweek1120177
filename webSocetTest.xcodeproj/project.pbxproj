@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F042B201FBE066600FFA236 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F042B1F1FBE066600FFA236 /* NewViewController.swift */; };
 		1F95F1D61F72995D003A395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95F1D51F72995D003A395E /* AppDelegate.swift */; };
 		1F95F1D81F72995D003A395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F95F1D71F72995D003A395E /* ViewController.swift */; };
 		1F95F1DB1F72995D003A395E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F95F1D91F72995D003A395E /* Main.storyboard */; };
 		1F95F1DD1F72995D003A395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F95F1DC1F72995D003A395E /* Assets.xcassets */; };
 		1F95F1E01F72995D003A395E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F95F1DE1F72995D003A395E /* LaunchScreen.storyboard */; };
+		C9A6846B341B79A920477FC6 /* Pods_webSocetTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FBF02271A0D4A047D69BBB /* Pods_webSocetTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F042B1F1FBE066600FFA236 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		1F95F1D21F72995D003A395E /* webSocetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webSocetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F95F1D51F72995D003A395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F95F1D71F72995D003A395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		1F95F1DC1F72995D003A395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F95F1DF1F72995D003A395E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F95F1E11F72995D003A395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FAF91C5285D723DF3A15F7C /* Pods-webSocetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webSocetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-webSocetTest/Pods-webSocetTest.release.xcconfig"; sourceTree = "<group>"; };
+		C4FBF02271A0D4A047D69BBB /* Pods_webSocetTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_webSocetTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC79DC7335FE04FA4AF7EE07 /* Pods-webSocetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webSocetTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-webSocetTest/Pods-webSocetTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A6846B341B79A920477FC6 /* Pods_webSocetTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1F95F1D41F72995D003A395E /* webSocetTest */,
 				1F95F1D31F72995D003A395E /* Products */,
+				753695CEA4A5FEC030D14897 /* Pods */,
+				24127086872470EE45AD05D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				1F95F1D51F72995D003A395E /* AppDelegate.swift */,
 				1F95F1D71F72995D003A395E /* ViewController.swift */,
+				1F042B1F1FBE066600FFA236 /* NewViewController.swift */,
 				1F95F1D91F72995D003A395E /* Main.storyboard */,
 				1F95F1DC1F72995D003A395E /* Assets.xcassets */,
 				1F95F1DE1F72995D003A395E /* LaunchScreen.storyboard */,
 				1F95F1E11F72995D003A395E /* Info.plist */,
 			);
 			path = webSocetTest;
+			sourceTree = "<group>";
+		};
+		24127086872470EE45AD05D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4FBF02271A0D4A047D69BBB /* Pods_webSocetTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753695CEA4A5FEC030D14897 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC79DC7335FE04FA4AF7EE07 /* Pods-webSocetTest.debug.xcconfig */,
+				6FAF91C5285D723DF3A15F7C /* Pods-webSocetTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F95F1E41F72995D003A395E /* Build configuration list for PBXNativeTarget "webSocetTest" */;
 			buildPhases = (
+				780DC275FB20D77DF57C0AF3 /* [CP] Check Pods Manifest.lock */,
 				1F95F1CE1F72995D003A395E /* Sources */,
 				1F95F1CF1F72995D003A395E /* Frameworks */,
 				1F95F1D01F72995D003A395E /* Resources */,
+				45318E85F4F7FA897CE62ABF /* [CP] Embed Pods Frameworks */,
+				65BA12731E1B883A733F9DFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45318E85F4F7FA897CE62ABF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-webSocetTest/Pods-webSocetTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftWebSocket/SwiftWebSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-webSocetTest/Pods-webSocetTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65BA12731E1B883A733F9DFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-webSocetTest/Pods-webSocetTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780DC275FB20D77DF57C0AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-webSocetTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F95F1CE1F72995D003A395E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F042B201FBE066600FFA236 /* NewViewController.swift in Sources */,
 				1F95F1D81F72995D003A395E /* ViewController.swift in Sources */,
 				1F95F1D61F72995D003A395E /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +350,7 @@
 		};
 		1F95F1E51F72995D003A395E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC79DC7335FE04FA4AF7EE07 /* Pods-webSocetTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 257R75DVT3;
@@ -272,6 +364,7 @@
 		};
 		1F95F1E61F72995D003A395E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FAF91C5285D723DF3A15F7C /* Pods-webSocetTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 257R75DVT3;
@@ -302,6 +395,7 @@
 				1F95F1E61F72995D003A395E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
