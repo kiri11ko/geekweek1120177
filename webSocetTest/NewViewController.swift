@@ -21,21 +21,18 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         echoTest()
+<<<<<<< HEAD
         print("test")
         // Do any additional setup after loading the view.
+=======
+>>>>>>> fixible
     }
     
     func echoTest(){
-//        var messageNum = 0
         let send : ()->() = {
-//            messageNum += 1
-//            let msg = "\(messageNum): \(NSDate().description)"
-//            print("send: \(msg)")
-//            ws.send(msg)
         }
         ws.event.open = {
             print("opened")
-//            send()
         }
         ws.event.close = { code, reason, clean in
             print("close")
@@ -44,10 +41,7 @@ class NewViewController: UIViewController {
             print("error \(error)")
         }
         ws.event.message = { message in
-            
-//            print(message)
             let json = JSON(parseJSON: String(describing: message))
-//            print("JSON:",json)
             if json["call"].stringValue == "tickers" {
                 for (key, subJSON) in json["data"] {
                     self.pairIdList.append(key)
@@ -56,31 +50,15 @@ class NewViewController: UIViewController {
                 }
                 self.tableView.reloadData()
             }
-//            if let text = message as? String {
-//                print("recv: \(text)")
-//                if messageNum == 10 {
-//                    ws.close()
-//                } else {
-//                    send()
-//                }
-//            }
-            
-            
         }
     }
     
     @IBAction func sendJSON(_ sender: Any) {
-//        trades_history { "pair_id" : "btceur" }
-
         let historyRequest = JSON(["call": "trades_history", "data": ["pair_id": "btceur"]])
         let tickersRequest = JSON(["call": "tickers"])
-//        ws.send(historyRequest)
         ws.send(tickersRequest)
         print(tickersRequest)
     }
-    
-
-
 }
 extension NewViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
