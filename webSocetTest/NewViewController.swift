@@ -21,7 +21,7 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         echoTest()
-        
+        print("test")
         // Do any additional setup after loading the view.
     }
     
